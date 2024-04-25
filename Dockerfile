@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts
 
 USER root
 
-# Instalar paquetes necesarios y agregar jenkins al grupo sudo
+# Install necessary packages and add jenkins to sudo group
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         python3 \
